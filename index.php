@@ -1,6 +1,6 @@
 <?php 
 header('Content-type: text/html; charset=UTF-8');
-require_once('/var/www/vhosts/raccontierotici24.it/httpdocs/include/funzioni.php');
+require_once(__DIR__ . '/include/funzioni.php');
 ?><!doctype html>
 <html lang="it" dir="ltr">
 <head>
@@ -36,7 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGNQMT8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<?php require_once('/var/www/vhosts/raccontierotici24.it/httpdocs/include/nav.php'); ?>
+<?php require_once(__DIR__ . '/include/nav.php'); ?>
 
 <!-- End Google Tag Manager (noscript) -->
   <div class="container mt-4">
@@ -178,12 +178,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if ($path != '/'): 
         ?>
             <aside class="col-lg-4">
-                <?php require_once('/var/www/vhosts/raccontierotici24.it/httpdocs/include/sidebar.php'); ?>
+                <?php require_once(__DIR__ . '/include/sidebar.php'); ?>
             </aside>
         <?php endif; ?>
     </div>
 
-    <?php require_once('/var/www/vhosts/raccontierotici24.it/httpdocs/include/footer.php'); ?>
+    <?php require_once(__DIR__ . '/include/footer.php'); ?>
 </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
   </body>

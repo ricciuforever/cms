@@ -2,6 +2,9 @@
 
 //// funzioni
 
+// Definisce la root path del progetto per percorsi di file portabili.
+define('ROOT_PATH', dirname(__DIR__));
+
 function show404() {
 	header("HTTP/1.0 404 Not Found");
 	echo '404';
@@ -28,7 +31,7 @@ $numeri = array(
 );
 
 // elenco delle pagine caricate da file JSON
-$json_pagine = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/pagine.json');
+$json_pagine = file_get_contents(ROOT_PATH . '/pagine.json');
 $listaPagine = json_decode($json_pagine, true);
 
 
@@ -139,7 +142,7 @@ function replaceShortcodes($content, $shortcodes) {
 }
 
 // Base path
-$base = '/var/www/vhosts/raccontierotici24.it/httpdocs';
+$base = ROOT_PATH;
 
 // Sanificazione della richiesta
 $path = filter_var($_SERVER["REQUEST_URI"], FILTER_SANITIZE_URL);
@@ -157,10 +160,8 @@ if (!empty($path)) {
         $title = $pageData["title"];
         $titleCustom = $pageData["titleCustom"] ?? '';
 
-        // Caricamento del contenuto della pagina
-        if (file_exists($base . $pageData["content"])) {
-            $content = file_get_contents($base . $pageData["content"]);
-        }
+        // Caricamento del contenuto della pagina direttamente dal JSON
+        $content = $pageData['html_content'] ?? '';
 
         // Assegna il numero corretto in base al tipo
         if (isset($numeri[$tipo]) && $numeri[$tipo]) {
