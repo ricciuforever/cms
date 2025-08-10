@@ -37,4 +37,5 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         
         # Cartella di destinazione sul server FTP (CORRETTA)
+        protocol: ftps
         server-dir: /httpdocs/
