@@ -36,5 +36,5 @@ jobs:
         # Legge il valore dal Secret 'FTP_PASSWORD'
         password: ${{ secrets.FTP_PASSWORD }}
         
-        # Cartella di destinazione sul server FTP (AGGIORNATA)
+        # Cartella di destinazione sul server FTP (CORRETTA)
         server-dir: /httpdocs/
