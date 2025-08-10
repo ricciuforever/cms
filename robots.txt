@@ -1,0 +1,8 @@
+user-agent: *
+disallow: /pagine/
+disallow: /cache/
+disallow: /_OLD/
+disallow: /include/
+disallow: /stats/
+disallow: /error/
+sitemap: https://www.raccontierotici24.it/sitemap.xml
