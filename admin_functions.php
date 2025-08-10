@@ -4,7 +4,8 @@ function handleImageUpload($file, $uploadDir = '/img/') {
         return ['success' => false, 'error' => 'Errore durante il caricamento del file. Codice: ' . $file['error']];
     }
 
-    $targetDirectory = $_SERVER['DOCUMENT_ROOT'] . $uploadDir;
+    // Use __DIR__ to make the path portable. Assumes this file is in the project root.
+    $targetDirectory = __DIR__ . $uploadDir;
     $fileName = preg_replace("/[^a-zA-Z0-9-_\.]/", "", basename($file['name']));
     $targetPath = $targetDirectory . time() . '-' . $fileName;
     $publicUrl = $uploadDir . time() . '-' . $fileName;
