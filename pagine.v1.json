@@ -1,0 +1,489 @@
+{
+    "/": {
+        "title": "Racconti erotici",
+        "tipo": "generico",
+        "url": "/",
+        "description": "Racconti Erotici 24: il miglior sito dove le storie che potrai ascoltare non sono frutto della fantasia, bens\u00ec della realt\u00e0 dei fatti! Entra ora nel sito.",
+        "robots": "index,follow",
+        "keywords": "Racconti erotici",
+        "content": "/pagine/.php",
+        "parent": "",
+        "image": ""
+    },
+    "/cookie-policy": {
+        "title": "Cookie Policy",
+        "tipo": "generico",
+        "url": "/cookie-policy",
+        "description": "",
+        "robots": "noindex,follow",
+        "keywords": "cookie policy",
+        "content": "/pagine/cookie-policy.php",
+        "parent": ""
+    },
+    "/privacy-policy": {
+        "title": "Privacy Policy",
+        "tipo": "generico",
+        "url": "/privacy-policy",
+        "description": "",
+        "robots": "noindex,follow",
+        "keywords": "privacy policy",
+        "content": "/pagine/privacy-policy.php",
+        "parent": ""
+    },
+    "/racconti-al-mare": {
+        "title": "Racconti al mare",
+        "tipo": "generico",
+        "url": "/racconti-al-mare",
+        "description": "Entra ora nel sito per scoprire tutti i racconti al mare presenti sul nostro sito. Non te ne pentirai!",
+        "robots": "index,follow",
+        "keywords": "Racconti al mare",
+        "content": "/pagine/racconti-al-mare.php",
+        "parent": ""
+    },
+    "/racconti-al-mare/2-2-scopa": {
+        "title": "2 + 2 scopa",
+        "tipo": "generico",
+        "url": "/racconti-al-mare/2-2-scopa",
+        "description": "2 e 2 scopa. Entra ora nel sito per leggere questo racconto erotico gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "2 + 2 scopa",
+        "content": "/pagine/2-2-scopa.php",
+        "parent": "/racconti-al-mare"
+    },
+    "/racconti-al-mare/io-vado-al-mare-da-sola": {
+        "title": "Io vado al mare da sola",
+        "tipo": "generico",
+        "url": "/racconti-al-mare/io-vado-al-mare-da-sola",
+        "description": "Io vado al mare da sola. Entra ora nel sito per leggere questo racconto erotico gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Un regalo con 5 sorprese",
+        "content": "/pagine/io-vado-al-mare-da-sola.php",
+        "parent": "/racconti-al-mare"
+    },
+    "/racconti-al-mare/onde-proibite": {
+        "title": "Onde Proibite",
+        "tipo": "generico",
+        "url": "/racconti-al-mare/onde-proibite",
+        "description": "L'aria salmastra e il sole cocente della Puglia erano sempre stati la colonna sonora delle mie estati. Ma quell'anno era diverso...",
+        "robots": "index,follow",
+        "keywords": "",
+        "content": "/pagine/racconti-al-mare-onde-proibite.php",
+        "parent": "/racconti-al-mare",
+        "image": "/img/1753664500-OndeProibiteimg.jpg",
+        "created_at": 1753664503
+    },
+    "/racconti-al-mare/ottimi-incontri-al-mercato": {
+        "title": "Ottimi incontri al mercato",
+        "tipo": "generico",
+        "url": "/racconti-al-mare/ottimi-incontri-al-mercato",
+        "description": "Ottimi incontri al mercato. Entra ora nel sito per leggere questo racconto erotico gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Ottimi incontri al mercato",
+        "content": "/pagine/ottimi-incontri-al-mercato.php",
+        "parent": "/racconti-al-mare"
+    },
+    "/racconti-al-mare/un-regalo-con-5-sorprese": {
+        "title": "Un regalo con 5 sorprese",
+        "tipo": "generico",
+        "url": "/racconti-al-mare/un-regalo-con-5-sorprese",
+        "description": "Un regalo con 5 sorprese. Entra ora nel sito per leggere questo racconto erotico gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Un regalo con 5 sorprese",
+        "content": "/pagine/un-regalo-con-5-sorprese.php",
+        "parent": "/racconti-al-mare"
+    },
+    "/racconti-bdsm": {
+        "title": "Racconti BDSM",
+        "tipo": "padrone",
+        "url": "/racconti-bdsm",
+        "description": "I racconti BDSM sono adorati e letti da centinaia di persone ogni giorno. Entra ora nel sito e scegliene uno o pi\u00f9 di",
+        "robots": "index,follow",
+        "keywords": "Racconti BDSM",
+        "content": "/pagine/racconti-bdsm.php",
+        "parent": ""
+    },
+    "/racconti-bdsm/il-beb-del-godimento": {
+        "title": "Il B&B del godimento",
+        "tipo": "padrone",
+        "url": "/racconti-bdsm/il-beb-del-godimento",
+        "description": "Il b&b del godimento. Entra ora nel sito per leggere questo racconto erotico bdsm gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Il B&B del godimento",
+        "content": "/pagine/il-beb-del-godimento.php",
+        "parent": "/racconti-bdsm"
+    },
+    "/racconti-bdsm/il-mio-nuovo-allievo": {
+        "title": "Il mio nuovo e giovane allievo",
+        "tipo": "padrone",
+        "url": "/racconti-bdsm/il-mio-nuovo-allievo",
+        "description": "Il mio nuovo e giovane allievo. Entra ora nel sito per leggere questo racconto erotico bdsm gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "racconti bdsm",
+        "content": "/pagine/l-allievo.php",
+        "parent": "/racconti-bdsm"
+    },
+    "/racconti-bdsm/la-lezione-dell-avvocato": {
+        "title": "La Lezione dell'Avvocato",
+        "tipo": "generico",
+        "url": "/racconti-bdsm/la-lezione-dell-avvocato",
+        "description": "Lavorare come assistente personale per l'avvocato Riccardo Conti era una sfida costante...",
+        "robots": "index,follow",
+        "keywords": "",
+        "content": "/pagine/racconti-bdsm-la-lezione-dell-avvocato.php",
+        "parent": "/racconti-bdsm",
+        "image": "/img/1753664719-LaLezionedellAvvocatoimg.jpg",
+        "created_at": 1753664723
+    },
+    "/racconti-bdsm/la-mia-prima-esperienza": {
+        "title": "La mia prima esperienza BDSM",
+        "tipo": "padrone",
+        "url": "/racconti-bdsm/la-mia-prima-esperienza",
+        "description": "La mia prima esperienza. Entra ora nel sito per leggere questo racconto erotico bdsm gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "La mia prima esperienza BDSM",
+        "content": "/pagine/la-mia-prima-esperienza.php",
+        "parent": "/racconti-bdsm"
+    },
+    "/racconti-bdsm/una-schiava-da-100-e-lode": {
+        "title": "Una schiava da 100 e lode",
+        "tipo": "padrone",
+        "url": "/racconti-bdsm/una-schiava-da-100-e-lode",
+        "description": "Una schiava da 100 e lode. Entra ora nel sito per leggere questo racconto erotico bdsm gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Una schiava da 100 e lode",
+        "content": "/pagine/una-schiava-da-100-e-lode.php",
+        "parent": "/racconti-bdsm"
+    },
+    "/racconti-bdsm/uno-schiavo-perfetto": {
+        "title": "Uno schiavo perfetto",
+        "tipo": "padrone",
+        "url": "/racconti-bdsm/uno-schiavo-perfetto",
+        "description": "Uno schiavo perfetto. Entra ora nel sito per leggere questo racconto erotico bdsm gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Uno schiavo perfetto",
+        "content": "/pagine/uno-schiavo-perfetto.php",
+        "parent": "/racconti-bdsm"
+    },
+    "/racconti-gay": {
+        "title": "Racconti gay",
+        "tipo": "gay",
+        "url": "/racconti-gay",
+        "description": "Entra ora nel sito per scoprire i racconti gay sia erotici che porno. Non perderne neanche uno!",
+        "robots": "index,follow",
+        "keywords": "Racconti gay",
+        "content": "/pagine/racconti-gay.php",
+        "parent": ""
+    },
+    "/racconti-gay/due-amici-molto-intimi": {
+        "title": "Due amici molto intimi",
+        "tipo": "generico",
+        "url": "/racconti-gay/due-amici-molto-intimi",
+        "description": "Due gay amici molto intimi. Entra ora nel sito per leggere questo racconto erotico gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "due amici molto intimi",
+        "content": "/pagine/due-amici-molto-intimi.php",
+        "parent": "/racconti-gay"
+    },
+    "/racconti-gay/sono-una-puttana-dotata-di-cazzo": {
+        "title": "Sono una puttana...dotata di cazzo",
+        "tipo": "gay",
+        "url": "/racconti-gay/sono-una-puttana-dotata-di-cazzo",
+        "description": "Sono una puttana dotata di cazzo. Entra ora nel sito per leggere questo racconto erotico gay gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Sono una puttana...dotata di cazzo",
+        "content": "/pagine/sono-una-puttana-dotata-di-cazzo.php",
+        "parent": "/racconti-gay"
+    },
+    "/racconti-gay/un-caffe-particolare": {
+        "title": "Un caff\u00e8 molto particolare",
+        "tipo": "generico",
+        "url": "/racconti-gay/un-caffe-particolare",
+        "description": "Un caff\u00e8 particolare con il mio amico gay. Entra ora nel sito per leggere questo racconto erotico gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Un caff\u00e8 molto particolare",
+        "content": "/pagine/un-caffe-particolare.php",
+        "parent": "/racconti-gay"
+    },
+    "/racconti-incestuosi": {
+        "title": "Racconti incestuosi",
+        "tipo": "generico",
+        "url": "/racconti-incestuosi",
+        "description": "Entra ora nel sito per scoprire tutti i racconti incestuosi, veri e per nulla frutto di storie finte!",
+        "robots": "index,follow",
+        "keywords": "Racconti incestuosi",
+        "content": "/pagine/racconti-incestuosi.php",
+        "parent": ""
+    },
+    "/racconti-incestuosi/ho-goduto-con-mio-fratello": {
+        "title": "Ho goduto con mio fratello",
+        "tipo": "generico",
+        "url": "/racconti-incestuosi/ho-goduto-con-mio-fratello",
+        "description": "Ho goduto con mio fratello. Entra ora nel sito per leggere i racconti incestuosi gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Ho goduto con mio fratello",
+        "content": "/pagine/ho-goduto-con-mio-fratello.php",
+        "parent": "/racconti-incestuosi"
+    },
+    "/racconti-incestuosi/il-bello-del-sesso-in-famiglia": {
+        "title": "Il bello del sesso in famiglia",
+        "tipo": "generico",
+        "url": "/racconti-incestuosi/il-bello-del-sesso-in-famiglia",
+        "description": "Il bello del sesso in famiglia. Entra ora nel sito per leggere questo racconto erotico gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Il bello del sesso in famiglia",
+        "content": "/pagine/il-bello-del-sesso-in-famiglia.php",
+        "parent": "/racconti-incestuosi"
+    },
+    "/racconti-incestuosi/il-riflesso-dimenticato": {
+        "title": "Il Riflesso Dimenticato",
+        "tipo": "generico",
+        "url": "/racconti-incestuosi/il-riflesso-dimenticato",
+        "description": "Non vedevo mia sorella da quasi dieci anni. La vita ci aveva separati...",
+        "robots": "index,follow",
+        "keywords": "",
+        "content": "/pagine/racconti-incestuosi-il-riflesso-dimenticato.php",
+        "parent": "/racconti-incestuosi",
+        "image": ""
+    },
+    "/racconti-incestuosi/in-un-magazzino-nascosto-agli-occhi-del-mondo": {
+        "title": "In un magazzino nascosto agli occhi del mondo",
+        "tipo": "generico",
+        "url": "/racconti-incestuosi/in-un-magazzino-nascosto-agli-occhi-del-mondo",
+        "description": "In un magazzino nascosto agli occhi del mondo. Entra ora nel sito per leggere i racconti incestuosi gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "In un magazzino nascosto agli occhi del mondo",
+        "content": "/pagine/in-un-magazzino-nascosto-agli-occhi-del-mondo.php",
+        "parent": "/racconti-incestuosi"
+    },
+    "/racconti-incestuosi/la-casa-al-lago": {
+        "title": "La Casa al Lago",
+        "tipo": "generico",
+        "url": "/racconti-incestuosi/la-casa-al-lago",
+        "description": "La casa al lago era sempre stata il nostro rifugio, il luogo dove le regole del mondo esterno sembravano svanire...",
+        "robots": "index,follow",
+        "keywords": "",
+        "content": "/pagine/racconti-incestuosi-la-casa-al-lago.php",
+        "parent": "/racconti-incestuosi",
+        "image": "/img/1753663905-LaCasaalLagoimg.jpg"
+    },
+    "/racconti-incestuosi/la-mamma-e-sempre-la-mamma": {
+        "title": "La mamma \u00e8 sempre la mamma",
+        "tipo": "generico",
+        "url": "/racconti-incestuosi/la-mamma-e-sempre-la-mamma",
+        "description": "La mamma \u00e8 sempre la mamma. Entra ora nel sito per leggere i racconti incestuosi gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "In un magazzino nascosto agli occhi del mondo",
+        "content": "/pagine/la-mamma-e-il-figlio.php",
+        "parent": "/racconti-incestuosi"
+    },
+    "/racconti-incestuosi/mai-piu-senza-mio-fratello": {
+        "title": "Mai pi\u00f9 senza mio fratello",
+        "tipo": "generico",
+        "url": "/racconti-incestuosi/mai-piu-senza-mio-fratello",
+        "description": "Mai pi\u00f9 senza mio fratello. Entra ora nel sito per leggere i racconti incestuosi gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Mai pi\u00f9 senza mio fratello",
+        "content": "/pagine/mai-piu-senza-mio-fratello.php",
+        "parent": "/racconti-incestuosi"
+    },
+    "/racconti-incestuosi/tale-madre-tale-figlia": {
+        "title": "Tale madre, tale figlia",
+        "tipo": "generico",
+        "url": "/racconti-incestuosi/tale-madre-tale-figlia",
+        "description": "Tale madre tale figlia. Entra ora nel sito per leggere i racconti incestuosi gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Tale madre, tale figlia",
+        "content": "/pagine/tale-madre-tale-figlia.php",
+        "parent": "/racconti-incestuosi"
+    },
+    "/racconti-incestuosi/vizi-di-famiglia": {
+        "title": "Vizi di famiglia",
+        "tipo": "generico",
+        "url": "/racconti-incestuosi/vizi-di-famiglia",
+        "description": "Vizi di famiglia. Entra ora nel sito per leggere i racconti incestuosi gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Vizi di famiglia",
+        "content": "/pagine/vizi-di-famiglia.php",
+        "parent": "/racconti-incestuosi"
+    },
+    "/racconti-porno": {
+        "title": "Racconti porno",
+        "tipo": "generico",
+        "url": "/racconti-porno",
+        "description": "Entra ora nel sito per leggere con calma e senza fretta tutti i racconti porno scritti da veri uomini o vere donne.",
+        "robots": "index,follow",
+        "keywords": "Racconti porno",
+        "content": "/pagine/racconti-porno.php",
+        "parent": ""
+    },
+    "/racconti-porno/il-book-fotografico-di-una-moglie-al-mare": {
+        "title": "Il book fotografico di una moglie al mare",
+        "tipo": "generico",
+        "url": "/racconti-porno/il-book-fotografico-di-una-moglie-al-mare",
+        "description": "Il book fotografico di una moglie al mare. Entra ora nel sito per leggere questo racconto porno gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Il book fotografico di una moglie al mare",
+        "content": "/pagine/il-book-fotografico-di-una-moglie-al-mare.php",
+        "parent": "/racconti-porno"
+    },
+    "/racconti-porno/il-mio-ragazzo-non-sa-nulla": {
+        "title": "Il mio ragazzo non sa nulla",
+        "tipo": "generico",
+        "url": "/racconti-porno/il-mio-ragazzo-non-sa-nulla",
+        "description": "Il mio ragazzo non sa nulla. Entra ora nel sito per leggere questo racconto porno gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Il mio ragazzo non sa nulla",
+        "content": "/pagine/il-mio-ragazzo-non-sa-nulla.php",
+        "parent": "/racconti-porno"
+    },
+    "/racconti-porno/la-mamma-del-mio-migliore-amico": {
+        "title": "La mamma del mio migliore amico",
+        "tipo": "generico",
+        "url": "/racconti-porno/la-mamma-del-mio-migliore-amico",
+        "description": "La mamma del mio migliore amico. Entra ora nel sito per leggere questo racconto porno gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "La mamma del mio migliore amico",
+        "content": "/pagine/la-mamma-del-mio-migliore-amico.php",
+        "parent": "/racconti-porno"
+    },
+    "/racconti-porno/solo-una-notte": {
+        "title": "Solo una notte",
+        "tipo": "generico",
+        "url": "/racconti-porno/solo-una-notte",
+        "description": "Solo una notte. Entra ora nel sito per leggere questo racconto porno gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Solo una notte",
+        "content": "/pagine/solo-una-notte.php",
+        "parent": "/racconti-porno"
+    },
+    "/racconti-porno/sono-una-troia": {
+        "title": "Agente, non mi multi, la prego! Sono una Troia",
+        "tipo": "generico",
+        "url": "/racconti-porno/sono-una-troia",
+        "description": "Sono una vera e propria troia. Entra ora nel sito per leggere questo racconto porno gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Agente, non mi multi, la prego! Sono una Troia",
+        "content": "/pagine/sono-una-troia.php",
+        "parent": "/racconti-porno"
+    },
+    "/racconti-porno/un-paio-di-numeri-erotici-a-basso-costo-ti-cambiano-la-sfica": {
+        "title": "Un paio di numeri erotici a basso costo ti cambiano la sFICA",
+        "tipo": "generico",
+        "url": "/racconti-porno/un-paio-di-numeri-erotici-a-basso-costo-ti-cambiano-la-sfica",
+        "description": "Un paio di numeri erotici a basswo costo ti cambiano la sfica. Entra ora nel sito per continuare a leggere.",
+        "robots": "index,follow",
+        "keywords": "Un paio di numeri erotici a basso costo ti cambiano la sFICA",
+        "content": "/pagine/un-paio-di-numeri-erotici-a-basso-costo-ti-cambiano-la-sfica.php",
+        "parent": "/racconti-porno"
+    },
+    "/racconti-porno/una-calda-e-lunga-estate": {
+        "title": "Una calda e lunga estate",
+        "tipo": "generico",
+        "url": "/racconti-porno/una-calda-e-lunga-estate",
+        "description": "Una calda e lunga estate. Entra ora nel sito per leggere questo racconto porno gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Una calda e lunga estate",
+        "content": "/pagine/una-calda-e-lunga-estate.php",
+        "parent": "/racconti-porno"
+    },
+    "/racconti-schiave": {
+        "title": "Racconti schiave",
+        "tipo": "padrone",
+        "url": "/racconti-schiave",
+        "description": "I racconti schiave vengono letti e condivisi da numerosi uomini e da tantissime donne. Entra ora nel sito e scopri di pi\u00f9.",
+        "robots": "index,follow",
+        "keywords": "Racconti schiave",
+        "content": "/pagine/racconti-schiave.php",
+        "parent": ""
+    },
+    "/racconti-schiave/la-notte-della-proclamazione": {
+        "title": "La fantastica notte della proclamazione",
+        "tipo": "padrone",
+        "url": "/racconti-schiave/la-notte-della-proclamazione",
+        "description": "La fantastica notte della proclamazione. Entra ora nel sito per leggere i racconti schiave gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "La fantastica notte della proclamazione",
+        "content": "/pagine/la-notte-della-proclamazione.php",
+        "parent": "/racconti-schiave"
+    },
+    "/racconti-schiave/la-penna-nascosta": {
+        "title": "La penna nascosta",
+        "tipo": "padrone",
+        "url": "/racconti-schiave/la-penna-nascosta",
+        "description": "La penna nascosta. Entra ora nel sito per leggere i racconti schiave gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "La penna nascosta",
+        "content": "/pagine/la-penna-nascosta.php",
+        "parent": "/racconti-schiave"
+    },
+    "/racconti-schiave/orgogliosamente-slave": {
+        "title": "Orgogliosamente ...slave",
+        "tipo": "padrone",
+        "url": "/racconti-schiave/orgogliosamente-slave",
+        "description": "Orgogliosamente ...slave. Entra ora nel sito per leggere i racconti schiave gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Orgogliosamente ...slave",
+        "content": "/pagine/orgogliosamente-slave.php",
+        "parent": "/racconti-schiave"
+    },
+    "/racconti-trans": {
+        "title": "Racconti trans",
+        "tipo": "trans",
+        "url": "/racconti-trans",
+        "description": "Entra ora nel sito per leggere tutti i racconti erotici che vedono come protagonisti dei favolosi trans carichi di amore, sesso e voglia!",
+        "robots": "index,follow",
+        "keywords": "Racconti trans",
+        "content": "/pagine/racconti-trans.php",
+        "parent": ""
+    },
+    "/racconti-trans/disperato-erotico-trans": {
+        "title": "Disperato erotico trans",
+        "tipo": "trans",
+        "url": "/racconti-trans/disperato-erotico-trans",
+        "description": "Disperato erotico trans. Entra ora nel sito per leggere questo racconto erotico trans gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Disperato erotico trans",
+        "content": "/pagine/disperato-erotico-trans.php",
+        "parent": "/racconti-trans"
+    },
+    "/racconti-trans/prima-volta-con-un-trans": {
+        "title": "La mia prima volta con un trans e di sicuro non l'ultima!",
+        "tipo": "trans",
+        "url": "/racconti-trans/prima-volta-con-un-trans",
+        "description": "Prima volta con una trans. Entra ora nel sito per leggere questo racconto erotico trans gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "La mia prima volta con un trans e di sicuro non l'ultima!",
+        "content": "/pagine/prima-volta-con-un-trans.php",
+        "parent": "/racconti-trans"
+    },
+    "/racconti-trans/strani-incontri": {
+        "title": "Strani incontri",
+        "tipo": "trans",
+        "url": "/racconti-trans/strani-incontri",
+        "description": "Strani incontri. Entra ora nel sito per leggere questo racconto erotico trans gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Strani incontri",
+        "content": "/pagine/strani-incontri.php",
+        "parent": "/racconti-trans"
+    },
+    "/racconti-trans/tizy-il-mio-primo-trans": {
+        "title": "Tizy, il mio primo trans",
+        "tipo": "trans",
+        "url": "/racconti-trans/tizy-il-mio-primo-trans",
+        "description": "Tizy il mio primo trans. Entra ora nel sito per leggere questo racconto erotico trans gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Tizy, il mio primo trans",
+        "content": "/pagine/tizy-il-mio-primo-trans.php",
+        "parent": "/racconti-trans"
+    },
+    "/racconti-trans/una-nottata-con-francesca": {
+        "title": "Una nottata con Francesca",
+        "tipo": "trans",
+        "url": "/racconti-trans/una-nottata-con-francesca",
+        "description": "Una nottata con Francesca. Entra ora nel sito per leggere questo racconto erotico trans gratis e senza limiti di tempo.",
+        "robots": "index,follow",
+        "keywords": "Strani incontri",
+        "content": "/pagine/una-nottata-con-francesca.php",
+        "parent": "/racconti-trans"
+    }
+}

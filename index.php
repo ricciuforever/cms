@@ -41,13 +41,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <div class="container mt-4">
     <div class="row">
-        <?php 
-        // Se siamo in homepage, il contenuto occupa tutta la larghezza (12 colonne)
-        // Altrimenti, occupa 8 colonne per fare spazio alla sidebar
-        $main_content_class = ($path == '/') ? 'col-lg-12' : 'col-lg-8';
-        ?>
-
-        <div class="<?= $main_content_class ?>">
+        <div class="col-lg-12">
             <main>
                 <?=$barretta?>
                 <?=$barrettasecondaria?>
@@ -173,14 +167,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </main>
         </div>
 
-        <?php 
-        // Mostra la sidebar solo se NON siamo in homepage
-        if ($path != '/'): 
-        ?>
-            <aside class="col-lg-4">
-                <?php require_once(__DIR__ . '/include/sidebar.php'); ?>
-            </aside>
-        <?php endif; ?>
     </div>
 
     <?php require_once(__DIR__ . '/include/footer.php'); ?>
