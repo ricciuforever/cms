@@ -1,0 +1,11 @@
+# Composer dependencies
+vendor/
+
+# Credentials file
+google_credentials.json
+
+# Generated audio files
+audio/
+
+# Output files - This is now more specific
+# *.mp3
