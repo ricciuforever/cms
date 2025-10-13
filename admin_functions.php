@@ -4,14 +4,6 @@ function handleImageUpload($file, $uploadDir = '/img/') {
         return ['success' => false, 'error' => 'Errore durante il caricamento del file. Codice: ' . $file['error']];
     }
 
-    // Security: Check if the file is a valid image
-    $allowedMimeTypes = ['image/jpeg', 'image/png', 'image/gif'];
-    $fileMimeType = mime_content_type($file['tmp_name']);
-
-    if (!in_array($fileMimeType, $allowedMimeTypes)) {
-        return ['success' => false, 'error' => 'Tipo di file non valido. Sono ammessi solo JPG, PNG, GIF.'];
-    }
-
     // Use __DIR__ to make the path portable.
     $targetDirectory = __DIR__ . $uploadDir;
     $fileName = preg_replace("/[^a-zA-Z0-9-_\.]/", "", basename($file['name']));
