@@ -50,64 +50,6 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
 
     // --- PROCESSING LOGIC ---
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if ($section === 'audio-generator' && $action === 'generate') {
-            require_once 'vendor/autoload.php';
-
-            try {
-                // --- CONFIGURATION ---
-                $credentialsPath = 'google_credentials.json';
-                $outputDir = 'audio/';
-
-                // --- VALIDATION ---
-                if (!file_exists($credentialsPath)) {
-                    throw new Exception("Authentication file not found at '$credentialsPath'. Please upload your Google Cloud service account key.");
-                }
-                if (!is_dir($outputDir)) {
-                    if (!mkdir($outputDir, 0755, true)) {
-                        throw new Exception("Failed to create the output directory '$outputDir'. Check permissions.");
-                    }
-                }
-                if (empty($_POST['text_content']) || empty($_POST['output_filename'])) {
-                    throw new Exception("Text content and filename are required.");
-                }
-
-                // --- CLIENT SETUP ---
-                $textToSpeechClient = new \Google\Cloud\TextToSpeech\V1\TextToSpeechClient([
-                    'credentials' => $credentialsPath
-                ]);
-
-                // --- API PARAMETERS ---
-                $input = (new \Google\Cloud\TextToSpeech\V1\SynthesisInput())->setText($_POST['text_content']);
-                $voice = (new \Google\Cloud\TextToSpeech\V1\VoiceSelectionParams())
-                    ->setLanguageCode('it-IT')
-                    ->setName($_POST['voice_name']);
-                $audioConfig = (new \Google\Cloud\TextToSpeech\V1\AudioConfig())
-                    ->setAudioEncoding(\Google\Cloud\TextToSpeech\V1\AudioEncoding::MP3)
-                    ->setPitch((float)$_POST['pitch'])
-                    ->setSpeakingRate((float)$_POST['speaking_rate']);
-
-                // --- API CALL ---
-                $response = $textToSpeechClient->synthesizeSpeech($input, $voice, $audioConfig);
-                $audioContent = $response->getAudioContent();
-
-                // --- SAVE FILE ---
-                $filename = preg_replace('/[^a-zA-Z0-9_-]/', '', $_POST['output_filename']); // Sanitize filename
-                $outputFile = $outputDir . $filename . '.mp3';
-                file_put_contents($outputFile, $audioContent);
-
-                $_SESSION['success_message'] = "Audio file created successfully! <a href='{$outputFile}' target='_blank'>Listen to it here</a>.";
-
-            } catch (Exception $e) {
-                $_SESSION['error_message'] = 'Error: ' . $e->getMessage();
-            } finally {
-                if (isset($textToSpeechClient)) {
-                    $textToSpeechClient->close();
-                }
-            }
-            header('Location: admin.php?section=audio-generator');
-            exit();
-        }
-
         if ($section === 'categories' && $action === 'save') {
             $name = $_POST['name'];
             $slug = generate_slug_from_text($name);
@@ -220,7 +162,6 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
                 <li class="nav-item"><a href="admin.php?section=pages" class="nav-link text-white <?= $section === 'pages' ? 'active' : '' ?>"><i class="bi bi-file-earmark-text me-2"></i> Pages</a></li>
                 <li class="nav-item"><a href="admin.php?section=categories" class="nav-link text-white <?= $section === 'categories' ? 'active' : '' ?>"><i class="bi bi-tag me-2"></i> Categories</a></li>
                 <li class="nav-item"><a href="admin.php?section=types" class="nav-link text-white <?= $section === 'types' ? 'active' : '' ?>"><i class="bi bi-bookmark me-2"></i> Types</a></li>
-                <li class="nav-item"><a href="admin.php?section=audio-generator" class="nav-link text-white <?= $section === 'audio-generator' ? 'active' : '' ?>"><i class="bi bi-soundwave me-2"></i> Audio Generator</a></li>
             </ul>
             <hr>
             <a href="?logout=true" class="btn btn-danger">Logout</a>
@@ -243,9 +184,6 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
                     break;
                 case 'types':
                     echo ($action === 'edit') ? include 'admin/type_form.php' : include 'admin/types.php';
-                    break;
-                case 'audio-generator':
-                    include 'admin/audio_generator_form.php';
                     break;
                 case 'pages':
                 default:
