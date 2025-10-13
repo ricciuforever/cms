@@ -108,99 +108,6 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
             exit();
         }
 
-        if ($section === 'story-generator' && $action === 'generate') {
-            require_once 'vendor/autoload.php';
-
-            $results = ['success' => [], 'errors' => []];
-            $textToSpeechClient = null;
-
-            try {
-                // --- CONFIGURATION & VALIDATION ---
-                $credentialsPath = 'google_credentials.json';
-                $outputDir = 'audio/';
-                if (!file_exists($credentialsPath)) throw new Exception("Authentication file not found.");
-                if (!is_dir($outputDir)) mkdir($outputDir, 0755, true);
-
-                $script_content = $_POST['script_content'] ?? '';
-                $characters_settings = $_POST['characters'] ?? [];
-                $output_basename = preg_replace('/[^a-zA-Z0-9_-]/', '', $_POST['output_basename'] ?? 'story');
-
-                if (empty($script_content) || empty($characters_settings) || empty($output_basename)) {
-                    throw new Exception("Script, character definitions, and a base filename are required.");
-                }
-
-                // --- PREPARE CHARACTER MAP ---
-                $characterMap = [];
-                foreach ($characters_settings as $char) {
-                    $characterMap[strtoupper(trim($char['name']))] = [
-                        'voice' => $char['voice'],
-                        'rate'  => (float)($char['rate'] ?? 1.0),
-                        'pitch' => (float)($char['pitch'] ?? 0.0),
-                    ];
-                }
-
-                // --- PARSE SCRIPT ---
-                // This regex splits the text by "CHARACTER:", capturing the character name.
-                $parts = preg_split('/(^([A-Z0-9\s]+):)/m', $script_content, -1, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
-
-                if (count($parts) < 2) {
-                    throw new Exception("Could not parse the script. Make sure it follows the 'CHARACTER:' format.");
-                }
-
-                $textToSpeechClient = new \Google\Cloud\TextToSpeech\V1\TextToSpeechClient(['credentials' => $credentialsPath]);
-                $fileCounter = 1;
-
-                // --- PROCESS PARTS ---
-                for ($i = 0; $i < count($parts); $i += 2) {
-                    $characterName = strtoupper(trim($parts[$i], ": \t\n\r\0\x0B"));
-                    $textContent = trim($parts[$i + 1]);
-
-                    if (empty($textContent)) continue;
-
-                    if (!isset($characterMap[$characterName])) {
-                        $results['errors'][] = "Skipping part {$fileCounter}: No voice settings found for character '{$characterName}'.";
-                        continue;
-                    }
-
-                    $settings = $characterMap[$characterName];
-                    $input = (new \Google\Cloud\TextToToSpeech\V1\SynthesisInput())->setText($textContent);
-                    $voice = (new \Google\Cloud\TextToSpeech\V1\VoiceSelectionParams())
-                        ->setLanguageCode('it-IT')
-                        ->setName($settings['voice']);
-                    $audioConfig = (new \Google\Cloud\TextToSpeech\V1\AudioConfig())
-                        ->setAudioEncoding(\Google\Cloud\TextToSpeech\V1\AudioEncoding::MP3)
-                        ->setPitch($settings['pitch'])
-                        ->setSpeakingRate($settings['rate']);
-
-                    $response = $textToSpeechClient->synthesizeSpeech($input, $voice, $audioConfig);
-                    $audioContent = $response->getAudioContent();
-
-                    $outputFile = sprintf('%s/%s_%02d.mp3', $outputDir, $output_basename, $fileCounter);
-                    file_put_contents($outputFile, $audioContent);
-                    $results['success'][] = "Created '{$outputFile}' for character '{$characterName}'.";
-                    $fileCounter++;
-                }
-
-            } catch (Exception $e) {
-                $results['errors'][] = 'Fatal Error: ' . $e->getMessage();
-            } finally {
-                if (isset($textToSpeechClient)) {
-                    $textToSpeechClient->close();
-                }
-            }
-
-            // --- SET SESSION MESSAGES AND REDIRECT ---
-            if (!empty($results['success'])) {
-                $_SESSION['success_message'] = "<strong>Generation Complete!</strong><br>" . implode('<br>', $results['success']);
-            }
-            if (!empty($results['errors'])) {
-                $_SESSION['error_message'] = "<strong>Errors occurred:</strong><br>" . implode('<br>', $results['errors']);
-            }
-
-            header('Location: admin.php?section=story-generator');
-            exit();
-        }
-
         if ($section === 'categories' && $action === 'save') {
             $name = $_POST['name'];
             $slug = generate_slug_from_text($name);
@@ -313,8 +220,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
                 <li class="nav-item"><a href="admin.php?section=pages" class="nav-link text-white <?= $section === 'pages' ? 'active' : '' ?>"><i class="bi bi-file-earmark-text me-2"></i> Pages</a></li>
                 <li class="nav-item"><a href="admin.php?section=categories" class="nav-link text-white <?= $section === 'categories' ? 'active' : '' ?>"><i class="bi bi-tag me-2"></i> Categories</a></li>
                 <li class="nav-item"><a href="admin.php?section=types" class="nav-link text-white <?= $section === 'types' ? 'active' : '' ?>"><i class="bi bi-bookmark me-2"></i> Types</a></li>
-                <li class="nav-item"><a href="admin.php?section=audio-generator" class="nav-link text-white <?= $section === 'audio-generator' ? 'active' : '' ?>"><i class="bi bi-soundwave me-2"></i> Simple Generator</a></li>
-                <li class="nav-item"><a href="admin.php?section=story-generator" class="nav-link text-white <?= $section === 'story-generator' ? 'active' : '' ?>"><i class="bi bi-collection-play me-2"></i> Story Generator</a></li>
+                <li class="nav-item"><a href="admin.php?section=audio-generator" class="nav-link text-white <?= $section === 'audio-generator' ? 'active' : '' ?>"><i class="bi bi-soundwave me-2"></i> Audio Generator</a></li>
             </ul>
             <hr>
             <a href="?logout=true" class="btn btn-danger">Logout</a>
@@ -340,9 +246,6 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
                     break;
                 case 'audio-generator':
                     include 'admin/audio_generator_form.php';
-                    break;
-                case 'story-generator':
-                    include 'admin/story_generator_form.php';
                     break;
                 case 'pages':
                 default:
